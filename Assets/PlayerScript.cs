@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerScript : MonoBehaviour
 {
+    //
     public Rigidbody2D rb;
-    public float speed = 5000f;    
+    //
+    public float speed = 5000f;   
+    //
     public int playerNum = 1; 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +19,10 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //
         if (playerNum == 1)
         {
+            //
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 rb.AddForce(Vector2.up * Time.deltaTime * speed);
@@ -36,13 +40,13 @@ public class PlayerScript : MonoBehaviour
             {
                 rb.AddForce(Vector2.right * Time.deltaTime * speed);
             }
-        }
+        }//
         else
         {
 
 
 
-
+            //
             if (Input.GetKey(KeyCode.W))
             {
                 rb.AddForce(Vector2.up * Time.deltaTime * speed);
