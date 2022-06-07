@@ -7,24 +7,17 @@ using UnityEngine.SceneManagement;
 public class KillPlayer : MonoBehaviour
 {
     public int Respawn;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    void onTrigger(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(Respawn);
+            Invoke("RespawnNow", 0.5f);
         }
     }
 
+    void RespawnNow()
+    {
+        SceneManager.LoadScene(Respawn);
+    }
 }

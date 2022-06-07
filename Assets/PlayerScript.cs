@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 rb.AddForce(Vector2.up * Time.deltaTime * speed);
-                print("up");
+               
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
@@ -50,7 +50,7 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 rb.AddForce(Vector2.up * Time.deltaTime * speed);
-                print("up");
+               
             }
             if (Input.GetKey(KeyCode.S))
             {
