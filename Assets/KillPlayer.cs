@@ -13,6 +13,7 @@ public class KillPlayer : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Invoke("RespawnNow", 0.5f);
+          
         }
     }
 
