@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 392553697}
   - component: {fileID: 392553696}
   m_Layer: 5
-  m_Name: Blue Controls
+  m_Name: Orange controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 1699692547}
   - component: {fileID: 1699692546}
   m_Layer: 5
-  m_Name: Orange Controls
+  m_Name: Blue controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,7 +767,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Left = A\n\nRight = D\n\nUp = W\n\nDown = S\n\nGrab = Spacebar \n"
+  m_Text: 'Left = A
+
+
+    Right = D
+
+
+    Up = W
+
+
+    Down = S
+
+
+'
 --- !u!222 &1699692547
 CanvasRenderer:
   m_ObjectHideFlags: 0
